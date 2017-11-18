@@ -21,6 +21,6 @@ function showQuotation() {
 var Q = Quotation.length;
 var whichQuotation=Math.round(Math.random()*(Q-1));
 
-document.getElementById("quoteDiv").innerHTML = (Quotation[whichQuotation] += " - Bruce Lee");
+document.getElementById("quoteDiv").innerHTML = (Quotation[whichQuotation] + " - Bruce Lee");
 }
 
