@@ -1,7 +1,7 @@
+/* global $ */
 // Random Quotes
-
-var Quotation=new Array()
-
+var currentQuote = '';
+var Quotation = new Array()
 Quotation[0] = '"I’m not in this world to live up to your expectations and you’re not in this world to live up to mine."';
 Quotation[1] = '"If you spend too much time thinking about a thing, you’ll never get it done."';
 Quotation[2] = '"Do not pray for an easy life, pray for the strength to endure a difficult one."';
@@ -15,12 +15,19 @@ Quotation[9] = '"The more we value things, the less we value ourselves."';
 Quotation[10] = '"Knowing is not enough, we must apply. Willing is not enough, we must do."';
 Quotation[11] = '"For it is easy to criticize and break down the spirit of others, but to know yourself takes a lifetime."';
 Quotation[12] = '"Be happy, but never satisfied."';
-Quotation[13] = '"You must be shapeless, formless, like water. When you pour water in a cup, it becomes the cup. When you pour water in a bottle, it becomes the bottle. When you pour water in a teapot, it becomes the teapot. Water can drip and it can crash. Become like water my friend."';
+Quotation[13] = '"You must be shapeless, formless, like water."';
 
-function showQuotation() {
-var Q = Quotation.length;
-var whichQuotation=Math.round(Math.random()*(Q-1));
-
-document.getElementById("quoteDiv").innerHTML = (Quotation[whichQuotation] + " - Bruce Lee");
+function setRandomQuote() {
+	currentQuote = Quotation[Math.round(Math.random() * Quotation.length)];
+	$('#quote').html(currentQuote + " - Bruce Lee");
+	$('#tweetQuote').attr('href', 'https://twitter.com/intent/tweet?text=' + currentQuote).attr('target', '_blank');
+	// 	$('#postQuote').attr('href', "https://www.facebook.com/20531316728/posts/10154009990506729/"+currentQuote).attr('target', '_blank');
 }
+$(function() {
+	$('#randomQuote').click(function() {
+		setRandomQuote();
+	});
+});
+
+
 

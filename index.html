@@ -17,21 +17,22 @@
 			<div class="title">
 				Bruce Lee Quote Generator
 			</div>
-			<div class="generate" id="generate-quote" onclick="showQuotation()">
+			<div class="generate" id="generate-quote" onclick="setRandomQuote()">
 				Get a Quote!
 			</div>
-			<div class="quote" id="quoteDiv"></div>
+			<div class="quoteDiv" id="quote"></div>
 			<div id="links">
-				<div>Tweet this Quote!
-					<a class="fa fa-twitter w3-hover-opacity" href="http://twitter.com/share?" target="_blank" title="Tweet this Quote!"></a>
-				</div>
-				<div>Post this Quote!
-					<a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com" target="_blank" title="Post this Quote!"></a>
-				</div>
+				<div>
+					<a id="tweetQuote" title="Tweet this Quote!"><i aria-hidden="true" class="fa fa-twitter fa-1x">Tweet this quote!</i></a>
+				</div><!--    <a id="postQuote" title="Post this Quote!">-->
+				<!--<btn class="btn btn-facebook"><i class="fa fa-facebook fa-1x" aria-hidden="true"><p1> Post this quote!</p1></i>-->
+				<!--     </btn></a>-->
 			</div>
 		</div>
 	</div>
-	<script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	</script> 
 	<script src="script.js">
 	</script>

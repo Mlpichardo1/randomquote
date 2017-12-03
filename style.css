@@ -1,68 +1,74 @@
 *, :before, :after {
-  position: relative;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	position: relative;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-
 .wrapper {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-image: url("https://pbs.twimg.com/media/CmL3RyqXIAEJkLa.jpg");
-  background-color: #000;
-  
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-image: url("https://pbs.twimg.com/media/CmL3RyqXIAEJkLa.jpg");
+	background-color: #000;
 }
-
-.container {  
-  position: absolute;
-  top: 35%;
-  left: 35%;
-  background-color: #FBFBFB;
-  width: 55%;
-  height: auto;
-  text-align: center;
+.container {
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	background-color: #FBFBFB;
+	width: 55%;
+	height: auto;
+	text-align: center;
 }
-
 .title {
-  font-family: 'Audiowide', cursive;
-  font-weight: bold;
-  font-size: 4rem;
-  text-transform: uppercase;
-  background-color: #2D3142;
-  color: #FFDF44;
+	font-family: 'Audiowide', cursive;
+	font-weight: bold;
+	font-size: 4rem;
+	text-transform: uppercase;
+	background-color: #2D3142;
+	color: #FFDF44;
 }
-
 .generate {
-  font-family: 'Hind Siliguri', sans-serif;
-  font-weight: bold;
-  font-size: 2.3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  width: 160px;
-  margin: 2rem auto 0;
-  background-color: #2D3142;
-  color:  #FFDF44;
-  cursor: pointer;
-  user-select: none;
-  
+	font-family: 'Hind Siliguri', sans-serif;
+	font-weight: bold;
+	font-size: 2.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+	width: 160px;
+	margin: 2rem auto 0;
+	background-color: #2D3142;
+	color: #FFDF44;
+	cursor: pointer;
+	user-select: none;
 }
-
-.quote {
-  font-family: 'Hind Siliguri', sans-serif;;
-  padding: 2rem;
-  font-size: 2.5rem;
+.quoteDiv {
+	font-family: 'Hind Siliguri', sans-serif;
+	;
+	padding: 2rem;
+	font-size: 2.5rem;
 }
+.fa {
+	padding: 10px;
+	font-size: 1.3em;
+	width: 20vh;
+	text-align: center;
+	margin: 5px 2px;
+}
+/*.fa-facebook {*/
 
-.links {
-  opacity: 0.9;
-  font-weight: bold;
-  width: 20%;
-  margin: 0 auto;
+/*  background: #3B5998;*/
+
+/*  color: white;*/
+
+/*}*/
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
 }
